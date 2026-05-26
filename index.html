@@ -9,8 +9,10 @@
 <body>
   <main class="login-shell">
     <h1>Personalized Multi-Dashboard</h1>
-    <p>Enter your password to open your dashboard.</p>
+    <p>Sign in with your email and password to open your personal dashboard.</p>
     <form id="login-form">
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" autocomplete="email" required />
       <label for="password">Password</label>
       <input id="password" name="password" type="password" autocomplete="current-password" required />
       <button type="submit">Open Dashboard</button>
@@ -18,7 +20,9 @@
     <p id="message" role="status" aria-live="polite"></p>
   </main>
 
-  <script src="password-handler.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="supabase-client.js"></script>
+  <script src="auth.js"></script>
   <script src="router.js"></script>
 </body>
 </html>
