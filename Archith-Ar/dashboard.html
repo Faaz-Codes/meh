@@ -8,9 +8,11 @@
   <link rel="stylesheet" href="styles/layout.css" />
   <link rel="stylesheet" href="styles/animations.css" />
 </head>
-<body>
+<body data-folder="Archith-Ar">
   <header>
     <h1>Personal Dashboard</h1>
+    <p id="auth-message" aria-live="polite"></p>
+    <button id="logout-button" type="button">Log out</button>
   </header>
   <main>
     <section>
@@ -18,5 +20,9 @@
       <p>Use <code>components/</code>, <code>pages/</code>, and <code>data/</code> to build this dashboard.</p>
     </section>
   </main>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="../supabase-client.js"></script>
+  <script src="../auth.js"></script>
+  <script src="../dashboard-auth.js"></script>
 </body>
 </html>
